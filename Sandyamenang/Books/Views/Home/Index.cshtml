@@ -1,0 +1,237 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<section class="section main-banner" id="top" data-section="section1" style="margin-top:30px">
+    <video autoplay muted loop id="bg-video">
+        <source src="../Content/assets/images/library.mp4" type="video/mp4" />
+    </video>
+
+    <div class="video-overlay header-text">
+        <div class="caption">
+            <h6>Your source of knowledge</h6>
+            <h2><em>Sandya</em>menang</h2>
+            <div class="main-button">
+                <div class="scroll-to-section"><a href="#section2">Get to know us!</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-12">
+                <div class="features-post">
+                    <div class="features-content">
+                        <div class="content-show">
+                            <h4><i class="fa fa-book"></i>Who are we?</h4>
+                        </div>
+                        <div class="content-hide">
+                            <p>A modern integrated library management system. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12">
+                <div class="features-post second-features">
+                    <div class="features-content">
+                        <div class="content-show">
+                            <h4><i class="fa fa-sitemap"></i>What we do?</h4>
+                        </div>
+                        <div class="content-hide">
+                            <p>Providing a book management system that can be controlled and organized flexibly. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12">
+                <div class="features-post third-features">
+                    <div class="features-content">
+                        <div class="content-show">
+                            <h4><i class="fa fa-bookmark"></i>How it works?</h4>
+                        </div>
+                        <div class="content-hide">
+                            <p>Just register and login then we can organize our book's database. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section why-us" data-section="section2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-heading">
+                    <h2>What facilities we provide?</h2>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div id='tabs'>
+                    <ul>
+                        <li>
+                            <a href='#tabs-1'>
+                                Full Catalog
+                            </a>
+                        </li>
+                        <li><a href='#tabs-2'>Books Organizer</a></li>
+                        <li><a href='#tabs-3'>Complete Record</a></li>
+                    </ul>
+                    <section class='tabs-content'>
+                        <article id='tabs-1'>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="../Content/assets/images/library.jpg" alt="">
+                                </div>
+                                <div class="col-md-6">
+                                    <h4>Full Catalog</h4>
+                                    <p>
+                                        Provides circulation and acquisitions system for library stock management. So we can see clearly
+                                        what books need to be reloaded.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article id='tabs-2'>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="../Content/assets/images/books.jpeg" alt="">
+                                </div>
+                                <div class="col-md-6">
+                                    <h4>Organize Books</h4>
+                                    <p>An easy way to enter new books and organize books!</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article id='tabs-3'>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="../Content/assets/images/organize.jpg" alt="">
+                                </div>
+                                <div class="col-md-6">
+                                    <h4></h4>
+                                    <p>Keep record of complete info of a book like title, author name, description, etc.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section contact" data-section="section6">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-heading">
+                    <h2>Let’s Keep In Touch</h2>
+                </div>
+            </div>
+            <div class="col-md-6">
+
+                <form id="contact" action="" method="post">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <fieldset>
+                                <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
+                            </fieldset>
+                        </div>
+                        <div class="col-md-6">
+                            <fieldset>
+                                <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="">
+                            </fieldset>
+                        </div>
+                        <div class="col-md-12">
+                            <fieldset>
+                                <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..."
+                                          required=""></textarea>
+                            </fieldset>
+                        </div>
+                        <div class="col-md-12">
+                            <fieldset>
+                                <button type="submit" id="form-submit" class="button">
+                                    <a href="#section1">Send message</a>
+                                </button>
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1972.001779217832!2d115.20876409146233!3d-8.691210037395596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd241205898f4a5%3A0x131c3e70b7648c84!2sJl.%20Pulau%20Singkep%2C%20Pedungan%2C%20Kec.%20Denpasar%20Sel.%2C%20Kota%20Denpasar%2C%20Bali!5e0!3m2!1sen!2sid!4v1605285316072!5m2!1sen!2sid"
+                            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                            tabindex="0" width="100%" height="422px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p><i class="fa fa-copyright"></i> Copyright @DateTime.Now.Year by Sandyamenang.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    //according to loftblog tut
+    $('.nav li:first').addClass('active');
+
+    var showSection = function showSection(section, isAnimate) {
+      var
+        direction = section.replace(/#/, ''),
+        reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+        reqSectionPos = reqSection.offset().top - 0;
+
+      if (isAnimate) {
+        $('body, html').animate({
+          scrollTop: reqSectionPos
+        },
+          800);
+      } else {
+        $('body, html').scrollTop(reqSectionPos);
+      }
+
+    };
+
+    var checkSection = function checkSection() {
+      $('.section').each(function () {
+        var
+          $this = $(this),
+          topEdge = $this.offset().top - 80,
+          bottomEdge = topEdge + $this.height(),
+          wScroll = $(window).scrollTop();
+        if (topEdge < wScroll && bottomEdge > wScroll) {
+          var
+            currentId = $this.data('section'),
+            reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+          reqLink.closest('li').addClass('active').
+            siblings().removeClass('active');
+        }
+      });
+    };
+
+    $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
+      if ($(e.target).hasClass('external')) {
+        return;
+      }
+      e.preventDefault();
+      $('#menu').removeClass('active');
+      showSection($(this).attr('href'), true);
+    });
+
+    $(window).scroll(function () {
+      checkSection();
+    });
+</script>
+

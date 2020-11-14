@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Sandyamenang</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="../Content/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="../Content/assets/css/style.css">
+    <link rel="stylesheet" href="../Content/assets/css/owl.css">
+    <link rel="stylesheet" href="../Content/assets/css/lightbox.css">
+    <link rel="stylesheet" href="../Content/Style.css">
+    <style>
+        background-image: url(https://p.kindpng.com/picc/s/168-1686856_transparent-cloud-of-smoke-png-transparent-background-white.png);
+        background-repeat: repeat;
+    </style>
+</head>
+ 
+<body>
+    <header class="main-header clearfix" role="header">
+        <div class="logo">
+            <a href="#"><em>Sandyamenang</em> Library</a>
+        </div>
+        <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+        <nav id="menu" class="main-nav" role="navigation">
+            <ul class="main-menu">
+                <li>
+                    @Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })
+                </li>
+                <li>
+                    @Html.ActionLink("Books", "Index", "Book", new { area = "" }, new { @class = "nav-link" })
+                </li>
+                <li class="has-submenu">
+                    <a href="">Get in!</a>
+                    <ul class="sub-menu">
+                        @Html.Partial("_LoginPartial")
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+   
+        @RenderBody()
+
+    <script src="../Content/assets/js/isotope.min.js"></script>
+    <script src="../Content/assets/js/tabs.js"></script>
+    <script src="../Content/assets/js/video.js"></script>
+    <script src="../Content/assets/js/slick-slider.js"></script>
+    <script src="../Content/assets/js/custom.js"></script>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
